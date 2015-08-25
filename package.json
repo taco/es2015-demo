@@ -1,0 +1,23 @@
+{
+  "name": "es2015",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "watch": "watchify src/main.js -t babelify -o lib/main.js",
+    "build": "browserify src/main.js -t babelify -o lib/main.js"
+  },
+  "author": "travis_johnson@volusion.com",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "babelify": "^6.2.0",
+    "browserify": "^11.0.1",
+    "jquery": "^2.1.4",
+    "watchify": "^3.3.1"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
